@@ -19,3 +19,6 @@ define('WP_EDITOR_UX__DIRECTORY_URL', plugin_dir_url( __FILE__ ));
 
 require WP_EDITOR_UX__DIRECTORY_PATH . '/inc/classes/PluginVersion.php';
 require WP_EDITOR_UX__DIRECTORY_PATH . '/inc/init.php';
+require WP_EDITOR_UX__DIRECTORY_PATH . '/inc/activation.php';
+
+register_activation_hook(__FILE__, 'WP_EDITOR_EXPERIENCE\inc\wp_editor_experience_activate');
